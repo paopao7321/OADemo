@@ -1,12 +1,18 @@
 package com.entity;
 
 import java.util.Arrays;
-
+/**
+ * 学生实体类，包含的学生基本信息包括： 学号(id)、姓名(name)、登录密码(password)、年级(grade)、专业(major)、已选课程(courses)
+ * @author zhy
+ *
+ */
 public class StudentEntity {
-	private String id;
-	private String name;
-	private String grade;
-	private String[] courses;
+	private String id;			// 学号(id)
+	private String name;		//姓名(name)
+	private String password;	//登录密码(password)
+	private String grade;		//年级(grade)
+	private String major;		//专业(major)
+	private String[] courses;	//已选课程(courses)
 
 	public String getId() {
 		return id;
@@ -38,6 +44,22 @@ public class StudentEntity {
 
 	public void setCourses(String[] courses) {
 		this.courses = courses;
+	}
+
+	public String getMajor() {
+		return major;
+	}
+
+	public void setMajor(String major) {
+		this.major = major;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	@Override
